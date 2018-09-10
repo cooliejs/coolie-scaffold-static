@@ -55,7 +55,8 @@ module.exports = function (coolie) {
             // html 文件，相对于当前文件
             src: [
                 // 支持 glob 语法
-                '**/*.html'
+                '*.html',
+                '!(node_modules|static)/**/*.html'
             ],
             // html 压缩配置
             minify: true
